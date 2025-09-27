@@ -1,0 +1,14 @@
+streamlit
+python-dotenv
+opencv-python-headless
+pillow
+pytesseract
+easyocr
+numpy
+scipy
+sentence-transformers
+langchain-openai
+langchain-core
+groq
+pymupdf
+python-docx

@@ -1,0 +1,51 @@
+{
+  "ocr": {
+    "tests_raw": [
+      "CBC: Hemoglobin",
+      "10.2",
+      "g/dL",
+      "(Low)",
+      "WBC 11_",
+      "200",
+      "{uL",
+      "(High)"
+    ],
+    "confidence": 0.8,
+    "engine_used": "easyocr"
+  },
+  "normalize": {
+    "tests": [
+      {
+        "name": "Hemoglobin",
+        "value": 10.2,
+        "unit": "g/dL",
+        "status": "low",
+        "ref_range": {
+          "low": 12.0,
+          "high": 15.0
+        },
+        "source_raw_index": 0
+      },
+      {
+        "name": "Wbc",
+        "value": 11,
+        "unit": "/uL",
+        "status": "low",
+        "ref_range": {
+          "low": 4000.0,
+          "high": 11000.0
+        },
+        "source_raw_index": 4
+      }
+    ],
+    "normalization_confidence": 0.9
+  },
+  "summary": {
+    "summary": "Low hemoglobin and low wbc.",
+    "explanations": [
+      "Hemoglobin is below the typical range; possible non-diagnostic causes include diet or blood loss.",
+      "Wbc is below the typical range; possible non-diagnostic causes include diet or blood loss."
+    ],
+    "confidence": 0.7
+  }
+}
